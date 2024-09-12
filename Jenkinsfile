@@ -47,6 +47,10 @@ pipeline {
         stage('Deploy to Develop') {
             steps {
                 echo 'DEPLOY'
+                sh ("sed -i -- 's/IMAGE/$IMAGE/g' docker-compose.yaml")
+                sh ("sed -i -- 's/REGISTRY/$REGISTRY/g' docker-compose.yaml")
+                sh ("sed -i -- 's/APPNAME/$APPNAME/g' docker-compose.yaml")
+                sh ("sed -i -- 's/VERSION/$VERSION/g' docker-compose.yaml")
                 sh 'docker compose up -d'
                 
             }
