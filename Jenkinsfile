@@ -3,7 +3,7 @@ pipeline {
     environment {
         PRUEBA = "Jenkins-prueba"
         EC2INSTANCEDEV = "ec2-user@3.237.69.190"
-        REGISTRY = "roxsross12"
+        REGISTRY = "malnattimartin"
         APPNAME  = "node-app"
         IMAGE     = "node-app-develop"
         VERSION  = "1.0.0"
@@ -14,7 +14,7 @@ pipeline {
         stage('Install Dependencias') {
             agent{
                 docker {
-                    image 'node:hydrogen-alpine3.20'
+                    image 'node:erbium-alpine'
                     args '-u root:root'
                 }
             }
