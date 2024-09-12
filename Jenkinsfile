@@ -7,7 +7,7 @@ pipeline {
         APPNAME  = "node-app"
         IMAGE     = "node-app-develop"
         VERSION  = "1.0.0"
-        DOCKER_HUB_LOGIN = credentials('docker-hub')
+        DOCKER_HUB_LOGIN = credentials('martinDHub')
     }
 
     stages {
