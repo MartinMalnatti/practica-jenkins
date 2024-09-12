@@ -14,7 +14,7 @@ pipeline {
         stage('Install Dependencias') {
             agent{
                 docker {
-                    image 'node:erbium-alpine'
+                    image 'node:hydrogen-alpine3.20'
                     args '-u root:root'
                 }
             }
