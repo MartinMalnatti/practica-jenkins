@@ -1,5 +1,5 @@
 #!/bin/bash
-BOT_URL="https://api.telegram.org/bot5881753165:AAEjB95ZRDUW0kRMCzMA7C1yjpHemiGTpiM/sendMessage"
+BOT_URL="https://api.telegram.org/bot1950741119:AAHu7wWyllaAimxgufGF7t8Idb-rgyb8CGM/sendMessage"
 TELEGRAM_CHAT_ID="-4530453506"
 # Set formatting
 PARSE_MODE="Markdown"
